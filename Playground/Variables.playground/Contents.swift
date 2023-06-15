@@ -26,5 +26,5 @@ let taylor = "swift"
 // type annotations
 let album: String = "Album"
 let year: Int = 1998
-let height: Double = 1.70
+let height: Double = 1.72
 let short: Bool = true
