@@ -1,7 +1,7 @@
 import UIKit
 
 // vars can change over time
-var greeting = "Hello, playground"
+var greeting = "Hello Variables, playground"
 var age = 25 // integer
 var population = 40_000_000 // integer
 var longStr = """
