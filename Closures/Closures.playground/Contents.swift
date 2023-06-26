@@ -80,3 +80,34 @@ res("Eldoret")
 res("Eldoret")
 res("Eldoret")
 res("Eldoret")
+
+// closures part two
+func travel2(action: (String) -> Void) {
+    print("I am getting ready")
+    action("Nairobi")
+    print("Arrived")
+}
+
+travel2 { (place: String) in
+    print("I am going to \(place) in my car")
+}
+
+func travel3(action:(String) -> String) {
+    print("I am getting ready")
+    let desc = action("Nairobi")
+    print("Arrived")
+}
+
+travel3 { (place: String) -> String in
+    return "I am going to \(place) in my car"
+}
+
+// alternative syntax
+travel3 { place in
+    "I am going to \(place) in my car"
+}
+
+// closures with multiple params
+travelWithSpeed {
+    "I am going to \($0) at \($1) kilometers per hour."
+}
